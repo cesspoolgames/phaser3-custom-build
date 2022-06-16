@@ -13,19 +13,35 @@ var Phaser = {
     DisplayList: require('gameobjects/DisplayList'),
     UpdateList: require('gameobjects/UpdateList'),
 
+    Container: require('gameobjects/container/Container'),
     Image: require('gameobjects/image/Image'),
     Sprite: require('gameobjects/sprite/Sprite'),
 
     Factories: {
+      Container: require('gameobjects/container/ContainerFactory'),
       Image: require('gameobjects/image/ImageFactory'),
       Sprite: require('gameobjects/sprite/SpriteFactory'),
       Text: require('gameobjects/text/TextFactory'),
     },
 
     Creators: {
+      Container: require('gameobjects/container/ContainerCreator'),
       Image: require('gameobjects/image/ImageCreator'),
       Sprite: require('gameobjects/sprite/SpriteCreator'),
     },
+  },
+  Input: {
+    // CreatePixelPerfectHandler: require('input/CreatePixelPerfectHandler'),
+    // CreateInteractiveObject: require('input/CreateInteractiveObject'),
+    Events: require('input/events'),
+    // Gamepad: require('input/gamepad'),
+    InputManager: require('input/InputManager'),
+    InputPlugin: require('input/InputPlugin'),
+    // InputPluginCache: require('input/InputPluginCache'),
+    // Keyboard: require('input/keyboard'),
+    Mouse: require('input/mouse'),
+    Pointer: require('input/Pointer'),
+    // Touch: require('input/touch'),
   },
   Loader: {
     FileTypes: {
