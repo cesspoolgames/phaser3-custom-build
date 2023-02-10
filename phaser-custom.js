@@ -39,7 +39,7 @@ var Phaser = {
     InputPlugin: require('input/InputPlugin'),
     // InputPluginCache: require('input/InputPluginCache'),
     // Keyboard: require('input/keyboard'),
-    Mouse: require('input/mouse'),
+    // Mouse: require('input/mouse'),
     Pointer: require('input/Pointer'),
     // Touch: require('input/touch'),
   },
