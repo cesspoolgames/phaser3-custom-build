@@ -16,18 +16,21 @@ var Phaser = {
     Container: require('gameobjects/container/Container'),
     Image: require('gameobjects/image/Image'),
     Sprite: require('gameobjects/sprite/Sprite'),
+    Graphics: require('gameobjects/graphics/Graphics.js'),
 
     Factories: {
       Container: require('gameobjects/container/ContainerFactory'),
       Image: require('gameobjects/image/ImageFactory'),
       Sprite: require('gameobjects/sprite/SpriteFactory'),
       Text: require('gameobjects/text/TextFactory'),
+      Graphics: require('gameobjects/graphics/GraphicsFactory'),
     },
 
     Creators: {
       Container: require('gameobjects/container/ContainerCreator'),
       Image: require('gameobjects/image/ImageCreator'),
       Sprite: require('gameobjects/sprite/SpriteCreator'),
+      Graphics: require('gameobjects/graphics/GraphicsCreator'),
     },
   },
   Input: {
@@ -39,7 +42,7 @@ var Phaser = {
     InputPlugin: require('input/InputPlugin'),
     // InputPluginCache: require('input/InputPluginCache'),
     // Keyboard: require('input/keyboard'),
-    Mouse: require('input/mouse'),
+    // Mouse: require('input/mouse'),
     Pointer: require('input/Pointer'),
     // Touch: require('input/touch'),
   },
